@@ -1,0 +1,151 @@
+body{
+    --cor-1: #e2e8f0;
+    --cor-3: #94a3b8;
+    --cor-7: #334155;
+    --radius-small: 8px;
+    --radius-normal: 12px;
+
+    background-color: var(--cor-1);
+    margin:0;
+    font-family: 'Outfit';
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-3);
+    width: 600px;
+    margin: 0 auto;
+    padding: 12px;
+    border-radius: var(--radius-small);
+    margin-top: 20px;
+}
+
+h1{
+    text-align: center;
+    margin: 0;
+}
+
+h3{
+    text-transform: lowercase;
+    text-align: center;
+    font-size: 15px;
+    color: #000;
+    font-weight: 600;
+}
+
+.listaU{
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.listaA{
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+input{
+    font-family: 'Outfit';
+    background-color: var(--cor-1);
+    border: 1px solid var(--cor-3);
+    border-radius: var(--radius-small);
+    padding: 10px 6px;
+}
+
+.listas{
+    display: flex;
+    gap: 8px;
+}
+
+.card{
+    background-color: var(--cor-1);
+    padding: 8px;
+    border-radius: var(--radius-normal);
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+button{
+    background-color: var(--cor-7);
+    border: none;
+    color: white;
+    padding: 6px 16px;
+    border-radius: var(--radius-normal);
+    cursor: pointer;
+    font-family: 'Outfit';
+}
+
+.card button{
+    align-self: center;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    margin-top: 12px;
+    gap: 6px;
+}
+
+.botoes{
+    display: flex;
+    gap: 8px;
+}
+
+.botoes button{
+    flex-grow: 1;
+    flex-basis: 0;
+}
+
+/*celulares*/
+@media(max-width: 450px){
+
+    main{
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    button{
+        font-size: 17px;
+        font-weight: 400;
+    }
+
+    input{
+        font-size: 18px;
+    }
+}
+
+/*tablets*/
+@media (min-width: 768px) and (max-width: 1024px){
+    main{
+        width: 80%;
+    }
+
+    h3{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 18px;
+    }
+
+
+    button{
+        margin-top: 2px;
+        font-size: 12px;
+        padding: 6px 12px;
+        font-weight: 600;
+    }
+}

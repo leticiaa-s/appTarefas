@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefas e Compromissos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1>TAREFAS e COMPROMISSOS</h1>
+        <h3>Qual o nível de urgência da sua tarefa ou compromisso?</h3>
+        <section class="listas">
+
+        <div class="listaU" id="listaUrgente">
+            <p>Urgente</p>
+        </div>
+
+        <div class="listaA" id="listaAgendar">
+            <p>Agendar</p>
+        </div>
+
+        </section>
+        <div class="formulario">
+            <input type="text" id="conteudo"/>
+            <div class="botoes">
+                <button type="submit" onclick="salvar('listaUrgente')">Urgente</button>
+                <button type="button" onclick="salvar('listaAgendar')">Agendar</button>
+            </div>
+        </div>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
